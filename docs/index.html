@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caesar Cipher</title>
+    <title>Шифр Цезаря</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Caesar Cipher</h1>
+    <h1>Шифр Цезаря</h1>
+    
+    <label>Введіть текст:</label>
+    <input type="text" id="textInput">
+    
+    <label>Введіть зміщення:</label>
+    <input type="number" id="shiftInput">
+    
+    <label>Виберіть режим:</label>
+    <select id="mode">
+        <option value="encode">Зашифрувати</option>
+        <option value="decode">Розшифрувати</option>
+    </select>
+
+    <button id="runCipher">Виконати</button>
+
+    <p><strong>Результат:</strong> <span id="output"></span></p>
 </body>
 </html>
